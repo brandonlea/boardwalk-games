@@ -23,3 +23,24 @@ h1, h2, h3 {
 .sub-heading-color {
     color: var(--highlight-color);
 }
+
+/* Navbar */
+#navbar {
+    background-color: var(--primary-color);
+}
+
+#navbar .logo {
+    width: 30px;
+}
+
+/* grid visualisation CSS for testing */
+
+/* .container,
+.row {
+    border: 2px solid black;
+}
+
+.col-12 {
+    border: 2px solid white;
+    background-color: lightgray;
+} */
