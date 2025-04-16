@@ -1,27 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&display=swap');
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Macondo&display=swap');
 
-/* Root Variables */
+/* CSS Variables */
 :root {
-    --primary-font: 'Inter', sans-serif;
-    --secondary-font: 'Macondo', cursive;
-    --primary-color: #3a2620;
-    --secondary-color: #aa9581;
-    --highlight-color: #416a8e;
-    --light-highlight-color: #7a9fc2;
+    --primary-font: "Inter", sans-serif;
+    --secondary-font: "Macondo", cursive;
+    --primary-color: #3a2620; /* dark brown */
+    --secondary-color: #aa9581; /* light brown */
+    --highlight-color: #416a8e; /* blue */
+    --highlight-color-light: #7a9fc2; /* light blue */
 }
-/* General Styles  */
+
+/* Global styles */
 
 body {
     font-family: var(--primary-font);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--secondary-font);
     color: var(--primary-color);
 }
 
-h1, h2 {
-    text-transform: capitalize;
+h1,
+h2 {
+    text-transform: uppercase;
 }
 
 h2 {
@@ -38,6 +43,7 @@ h2 {
 }
 
 /* Navbar */
+
 #navbar {
     background-color: var(--primary-color);
 }
@@ -47,11 +53,13 @@ h2 {
 }
 
 /* Header */
+
 #header .lead {
     font-family: var(--secondary-font);
 }
 
 /* Services */
+
 #services .card-footer {
     font-weight: bold;
     color: var(--highlight-color);
@@ -61,6 +69,14 @@ h2 {
 #services .card {
     margin-bottom: 1.5rem;
 }
+
+/* Game library cards */
+
+#new-games .card,
+#fav-games .card {
+    border: none;
+}
+
 
 /* grid visualisation CSS for testing */
 
@@ -74,26 +90,35 @@ h2 {
     background-color: lightgray;
 } */
 
-/* Media Queries */
-@media (min-width: 768px) {
+/* Media queries */
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    /* Make all service cards the same height for consistency */
     #services .card-body {
-        min-height: 180px;
+        min-height: 191px;
     }
 }
 
-@media (min-width: 992px) {
+/* Large devices (small laptops, 992px and up) */
+@media screen and (min-width: 992px) {
+    /* Make all service cards the same height for consistency */
     #services .card-body {
         min-height: auto;
     }
 }
 
-@media (min-width: 1200px) {
+/* xl devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    /* make all service cards the same height for consistency */
     #services .card-body {
         min-height: 220px;
     }
 }
 
-@media (min-width: 1400px) {
+/* xxl devices (larger desktops, 1400px and up) */
+@media screen and (min-width: 1400px) {
+    /* make all service cards the same height for consistency */
     #services .card-body {
         min-height: 195px;
     }
